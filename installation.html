@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Installation Guide — PyIntro</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/custom.css"/>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="fab fa-python me-2"></i>PyIntro</a>
+    <button class="navbar-toggler border-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+        <li class="nav-item"><a class="nav-link" href="fundamentals.html">Fundamentals</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+        <li class="nav-item"><a class="nav-link active" href="installation.html">Installation</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-section py-5 text-center text-white" style="background: linear-gradient(135deg, #1e3d59 0%, #306998 100%);">
+  <div class="container">
+    <h1><i class="fas fa-download me-3 text-warning"></i>Installation Guide</h1>
+    <p class="lead">Easy, step-by-step documentation on setting up Python and VS Code environment.</p>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container" style="max-width: 900px;">
+    
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Environment Setup</h2>
+      <div class="section-divider mx-auto" style="width: 60px; height: 3px; background-color: #ffde57; margin: 15px auto;"></div>
+      <p class="text-muted">Pumili ng operating system sa ibaba upang makita ang tamang proseso ng pag-install.</p>
+    </div>
+
+    <ul class="nav nav-tabs justify-content-center mb-4" id="osTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active fw-bold text-dark" id="windows-tab" data-bs-toggle="tab" data-bs-target="#windows-content" type="button" role="tab">
+          <i class="fab fa-windows text-primary me-1"></i> Windows Guide
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link fw-bold text-dark" id="mac-tab" data-bs-toggle="tab" data-bs-target="#mac-content" type="button" role="tab">
+          <i class="fab fa-apple text-dark me-1"></i> macOS Guide
+        </button>
+      </li>
+    </ul>
+
+    <div class="tab-content bg-light p-4 rounded shadow-sm" id="osTabsContent">
+      
+      <div class="tab-pane fade show active" id="windows-content" role="tabpanel">
+        <h4 class="fw-bold mb-3 text-primary"><i class="fab fa-windows me-2"></i>Windows Installation Steps</h4>
+        <ol class="list-group list-group-numbered list-group-flush">
+          <li class="list-group-item bg-transparent">
+            <strong>I-download ang Python:</strong> Pumunta sa opisyal na <a href="https://www.python.org/downloads/" target="_blank">Python Website</a> at i-download ang pinakabagong installer para sa Windows.
+          </li>
+          <li class="list-group-item bg-transparent text-danger fw-bold">
+            <i class="fas fa-exclamation-triangle me-1"></i> Napakahalaga: Siguraduhing lagyan ng tsek (check) ang kahon na may nakasulat na "Add Python.exe to PATH" bago i-click ang Install Now.
+          </li>
+          <li class="list-group-item bg-transparent">
+            <strong>I-verify ang Setup:</strong> Buksan ang inyong Command Prompt (CMD) at i-type ang code na ito upang suriin kung pumasok ang system environment:
+            <div class="bg-dark text-light p-2 rounded font-monospace my-2 small">python --version</div>
+          </li>
+          <li class="list-group-item bg-transparent">
+            <strong>I-setup ang Editor:</strong> I-download at buksan ang <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>, pagkatapos ay i-install ang "Python Extension" na gawa ng Microsoft.
+          </li>
+        </ol>
+      </div>
+
+      <div class="tab-pane fade" id="mac-content" role="tabpanel">
+        <h4 class="fw-bold mb-3 text-dark"><i class="fab fa-apple me-2"></i>macOS Installation Steps</h4>
+        <ol class="list-group list-group-numbered list-group-flush">
+          <li class="list-group-item bg-transparent">
+            <strong>Gumamit ng Homebrew (Inirerekomenda):</strong> Buksan ang Terminal app ng Mac at patakbuhin ang code na ito para sa mabilis na package management package:
+            <div class="bg-dark text-light p-2 rounded font-monospace my-2 small">/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</div>
+          </li>
+          <li class="list-group-item bg-transparent">
+            <strong>I-install ang Python 3:</strong> Kapag may Homebrew na ang Mac ninyo, patakbuhin lang ang simpleng command na ito:
+            <div class="bg-dark text-light p-2 rounded font-monospace my-2 small">brew install python</div>
+          </li>
+          <li class="list-group-item bg-transparent">
+            <strong>I-verify ang Setup:</strong> Tiyakin kung gumagana sa pamamagitan ng pag-type nito sa terminal terminal app:
+            <div class="bg-dark text-light p-2 rounded font-monospace my-2 small">python3 --version</div>
+          </li>
+        </ol>
+      </div>
+      
+    </div> </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container text-center">
+    <p class="mb-1"><i class="fab fa-python me-2"></i><strong>PyIntro</strong> — Your Gateway to Python</p>
+    <p class="mb-1">Web Development Fundamentals | A.Y. 2025–2026</p>
+    <a href="#" class="text-warning text-decoration-none">GitHub Pages Link</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/validation.js"></script>
+</body>
+</html>

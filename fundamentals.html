@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fundamentals — PyIntro</title>
+  <title>Python Fundamentals — PyIntro</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <link rel="stylesheet" href="css/custom.css"/>
@@ -22,86 +22,162 @@
         <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
         <li class="nav-item"><a class="nav-link active" href="fundamentals.html">Fundamentals</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+<li class="nav-item"><a class="nav-link" href="installation.html">Installation</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="page-header">
-  <h1><i class="fas fa-code me-3"></i>Python Fundamentals</h1>
-  <p>The basic building blocks every Python beginner needs to know</p>
-</div>
-
-<section class="py-5">
-  <div class="container" style="max-width:900px;">
-
-    <h4 class="section-title">Variables & Data Types</h4>
-    <div class="section-divider" style="margin:0 0 15px 0;"></div>
-    <p>Variables store information that your program can use later. Python automatically detects what type of data you are storing — you don't need to declare the type manually.</p>
-    <div class="code-block">
-      name = "Real"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# String<br>
-      age = 20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Integer<br>
-      gpa = 1.75&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Float<br>
-      is_student = True&nbsp;# Boolean<br>
-      print(name, age, gpa, is_student)
-    </div>
-
-    <h4 class="section-title mt-5">Conditional Statements</h4>
-    <div class="section-divider" style="margin:0 0 15px 0;"></div>
-    <p>Conditionals let your program make decisions. If a condition is true, one block of code runs. Otherwise, a different block runs.</p>
-    <div class="code-block">
-      grade = 88<br><br>
-      if grade >= 90:<br>
-      &nbsp;&nbsp;print("Excellent!")<br>
-      elif grade >= 75:<br>
-      &nbsp;&nbsp;print("Passed")<br>
-      else:<br>
-      &nbsp;&nbsp;print("Try again")
-    </div>
-
-    <h4 class="section-title mt-5">Loops</h4>
-    <div class="section-divider" style="margin:0 0 15px 0;"></div>
-    <p>Loops repeat a block of code multiple times. The <strong>for loop</strong> runs a fixed number of times, while the <strong>while loop</strong> runs as long as a condition is true.</p>
-    <div class="code-block">
-      # For loop<br>
-      for i in range(5):<br>
-      &nbsp;&nbsp;print("Count:", i)<br><br>
-      # While loop<br>
-      x = 0<br>
-      while x &lt; 3:<br>
-      &nbsp;&nbsp;print("x is", x)<br>
-      &nbsp;&nbsp;x += 1
-    </div>
-
-    <h4 class="section-title mt-5">Functions</h4>
-    <div class="section-divider" style="margin:0 0 15px 0;"></div>
-    <p>Functions are reusable blocks of code. You define them once and call them whenever you need them — avoiding repetition and making your code cleaner.</p>
-    <div class="code-block">
-      def greet(name):<br>
-      &nbsp;&nbsp;return "Hello, " + name + "!"<br><br>
-      def add(a, b):<br>
-      &nbsp;&nbsp;return a + b<br><br>
-      print(greet("Real"))<br>
-      print(add(10, 5))
-    </div>
-
-    <h4 class="section-title mt-5">Lists</h4>
-    <div class="section-divider" style="margin:0 0 15px 0;"></div>
-    <p>Lists store multiple values in a single variable. You can access, add, remove, and loop through items in a list easily.</p>
-    <div class="code-block">
-      subjects = ["Python", "Web Dev", "InfoSec"]<br><br>
-      print(subjects[0])&nbsp;&nbsp;&nbsp;&nbsp;# Python<br>
-      subjects.append("Java")<br>
-      print(len(subjects))&nbsp;&nbsp;# 4<br><br>
-      for s in subjects:<br>
-      &nbsp;&nbsp;print(s)
-    </div>
-
+<section class="hero-section py-5 text-center text-white">
+  <div class="container">
+    <h1><i class="fas fa-code me-3"></i>Python Fundamentals</h1>
+    <p class="lead">Master the core building blocks of Python with clean, interactive code blueprints.</p>
   </div>
 </section>
 
-<footer class="site-footer">
+<section class="py-5">
   <div class="container">
+    <div class="row g-4">
+      
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-header bg-dark text-white fw-bold d-flex align-items-center">
+            <i class="fas fa-font me-2 text-warning"></i> 1. Variables & Data Types
+          </div>
+          <div class="card-body">
+            <p class="card-text text-muted">Variables act as storage containers for your program data. Python automatically detects the data type without explicit declaration.</p>
+            <div class="code-block p-3 rounded mb-3" style="background: #1e1e1e; color: #d4d4d4; font-family: monospace;">
+              <span style="color: #6a9955;"># Dynamic variable assignment</span><br>
+              user_name = <span style="color: #ce9178;">"Alice"</span>  <span style="color: #6a9955;"># String</span><br>
+              user_age = <span style="color: #b5cea8;">21</span>       <span style="color: #6a9955;"># Integer</span><br>
+              gpa = <span style="color: #b5cea8;">3.75</span>          <span style="color: #6a9955;"># Float</span><br>
+              is_learning = <span style="color: #569cd6;">True</span>  <span style="color: #6a9955;"># Boolean</span><br><br>
+              print(user_name, <span style="color: #ce9178;">"is"</span>, user_age)
+            </div>
+            <div class="bg-light p-2 rounded border-start border-warning font-monospace small">
+              <strong>Output:</strong> Alice is 21
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-header bg-dark text-white fw-bold d-flex align-items-center">
+            <i class="fas fa-code-branch me-2 text-warning"></i> 2. Conditionals (if-elif-else)
+          </div>
+          <div class="card-body">
+            <p class="card-text text-muted">Conditionals control the flow of execution based on true/false conditions using clean indentation.</p>
+            <div class="code-block p-3 rounded mb-3" style="background: #1e1e1e; color: #d4d4d4; font-family: monospace;">
+              score = <span style="color: #b5cea8;">85</span><br><br>
+              <span style="color: #569cd6;">if</span> score &gt;= <span style="color: #b5cea8;">90</span>:<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;print(<span style="color: #ce9178;">"Grade: A"</span>)<br>
+              <span style="color: #569cd6;">elif</span> score &gt;= <span style="color: #b5cea8;">80</span>:<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;print(<span style="color: #ce9178;">"Grade: B"</span>)<br>
+              <span style="color: #569cd6;">else</span>:<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;print(<span style="color: #ce9178;">"Grade: C"</span>)
+            </div>
+            <div class="bg-light p-2 rounded border-start border-warning font-monospace small">
+              <strong>Output:</strong> Grade: B
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-header bg-dark text-white fw-bold d-flex align-items-center">
+            <i class="fas fa-redo me-2 text-warning"></i> 3. Loops (For & While)
+          </div>
+          <div class="card-body">
+            <p class="card-text text-muted">Loops iterate repeatedly over sequences or check boolean statuses to automate tasks efficiently.</p>
+            <div class="code-block p-3 rounded mb-3" style="background: #1e1e1e; color: #d4d4d4; font-family: monospace;">
+              <span style="color: #6a9955;"># Looping through a sequence range</span><br>
+              <span style="color: #569cd6;">for</span> i <span style="color: #569cd6;">in</span> range(<span style="color: #b5cea8;">3</span>):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;print(<span style="color: #ce9178;">"Iteration:"</span>, i)<br><br>
+              <span style="color: #6a9955;"># Quick Python list array iteration</span><br>
+              fruits = [<span style="color: #ce9178;">"apple"</span>, <span style="color: #ce9178;">"banana"</span>]<br>
+              <span style="color: #569cd6;">for</span> f <span style="color: #569cd6;">in</span> fruits:<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;print(f)
+            </div>
+            <div class="bg-light p-2 rounded border-start border-warning font-monospace small">
+              <strong>Output:</strong><br>Iteration: 0<br>Iteration: 1<br>Iteration: 2<br>apple<br>banana
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-header bg-dark text-white fw-bold d-flex align-items-center">
+            <i class="fas fa-cubes me-2 text-warning"></i> 4. Functions
+          </div>
+          <div class="card-body">
+            <p class="card-text text-muted">Functions collect reusable code snippets into named logic sequences to prevent repetitive structures.</p>
+            <div class="code-block p-3 rounded mb-3" style="background: #1e1e1e; color: #d4d4d4; font-family: monospace;">
+              <span style="color: #569cd6;">def</span> <span style="color: #dcdcaa;">calculate_area</span>(width, height):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #569cd6;">return</span> width * height<br><br>
+              result = calculate_area(<span style="color: #b5cea8;">5</span>, <span style="color: #b5cea8;">4</span>)<br>
+              print(<span style="color: #ce9178;">"Area calculation:"</span>, result)
+            </div>
+            <div class="bg-light p-2 rounded border-start border-warning font-monospace small">
+              <strong>Output:</strong> Area calculation: 20
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-light text-center">
+  <div class="container">
+    <h3>Ready to take your coding skills further?</h3>
+    <p class="text-muted">Register for our upcoming interactive development sprints and deep-dives.</p>
+    <button class="btn btn-python px-4 py-2 mt-2" data-bs-toggle="modal" data-bs-target="#contactModal">Get Started Now</button>
+  </div>
+</section>
+
+<div class="modal fade" id="contactModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background:#306998; color:#FFD43B;">
+        <h5 class="modal-title"><i class="fab fa-python me-2"></i>Get Started with Python</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form action="contact.php" method="POST" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" name="name" class="form-control" required/>
+            <div class="invalid-feedback">Please enter your full name.</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email Address</label>
+            <input type="email" name="email" class="form-control" required/>
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Subject</label>
+            <input type="text" name="subject" class="form-control" required/>
+            <div class="invalid-feedback">Please enter a subject.</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea name="message" class="form-control" rows="4" required minlength="20"></textarea>
+            <div class="invalid-feedback">Message must be at least 20 characters.</div>
+          </div>
+          <button type="submit" class="btn btn-python w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer mt-auto">
+  <div class="container text-center">
     <p class="mb-1"><i class="fab fa-python me-2"></i><strong>PyIntro</strong> — Your Gateway to Python</p>
     <p class="mb-1">Web Development Fundamentals | A.Y. 2025–2026</p>
     <a href="#">GitHub Pages Link</a>
@@ -109,5 +185,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/validation.js"></script>
 </body>
 </html>
