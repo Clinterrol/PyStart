@@ -3,82 +3,87 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About — PyIntro</title>
+  <title>About — PyStart</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <link rel="stylesheet" href="css/custom.css"/>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg sticky-top">
   <div class="container">
-    <a class="navbar-brand" href="index.html"><i class="fab fa-python me-2"></i>PyIntro</a>
-    <button class="navbar-toggler border-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+    <a class="navbar-brand" href="index.html"><i class="fab fa-python"></i>Py<span>Start</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav mx-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
         <li class="nav-item"><a class="nav-link" href="fundamentals.html">Fundamentals</a></li>
         <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
       </ul>
+      <a class="btn-try" href="index.html">&gt;_ Get Started</a>
     </div>
   </div>
 </nav>
 
 <div class="page-header">
-  <h1><i class="fas fa-users me-3"></i>About This Project</h1>
-  <p>Who we are and why we built PyIntro</p>
+  <div class="badge-label"><i class="fas fa-users me-1"></i> The Team</div>
+  <h1>About PyStart</h1>
+  <p>Who we are and why we built this site</p>
 </div>
 
-<section class="py-5">
-  <div class="container text-center" style="max-width:800px;">
+<section class="content-section">
+  <div class="container" style="max-width:860px;">
 
-    <h4 class="section-title">About PyIntro</h4>
-    <div class="section-divider"></div>
-    <p>PyIntro is a student-built web project created as the Final Integrative Activity for <strong>Web Development Fundamentals</strong> at <strong>National Teachers College</strong>. The goal of this site is to introduce Python Programming to complete beginners — covering its history, purpose, real-world uses, and basic code fundamentals in a clean, accessible format.</p>
+    <div class="topic-card mb-4">
+      <h4><span class="topic-num">i</span> About This Project</h4>
+      <p>PyStart is a student-built website created as the Final Integrative Activity for <strong>Web Development Fundamentals</strong> at <strong>National Teachers College</strong>. The goal of this site is to introduce Python Programming to complete beginners — covering its history, purpose, real-world uses, and basic code fundamentals in a clean, accessible, and modern format.</p>
+    </div>
 
-    <h4 class="section-title mt-5">The Course</h4>
-    <div class="section-divider"></div>
-    <p>This project was built using <strong>Bootstrap 5</strong> for responsive design, <strong>Git and GitHub</strong> for version control and deployment, and <strong>PHP</strong> for server-side form handling. It represents the culmination of three weeks of learning across Bootstrap components, Git workflows, and PHP back-end basics.</p>
+    <div class="topic-card mb-5">
+      <h4><span class="topic-num">i</span> The Course</h4>
+      <p>This project was built using <strong>Bootstrap 5</strong> for responsive design, <strong>Git and GitHub</strong> for version control and live deployment, and <strong>PHP</strong> for server-side form handling. It represents the culmination of three weeks of learning across Bootstrap components, Git workflows, and PHP back-end scripting.</p>
+    </div>
 
-    <h4 class="section-title mt-5">Our Group</h4>
-    <div class="section-divider"></div>
-    <div class="row g-4 mt-2">
-      <div class="col-md-4">
-        <div class="card h-100 p-3">
-          <i class="fas fa-user-circle fa-3x mb-3" style="color:#306998;"></i>
-          <h6 class="fw-bold">Member 1</h6>
-          <p class="text-muted small">Hero Section + CSS Theming</p>
+    <h3 class="section-title mb-1">Our Group</h3>
+    <div class="section-label mb-4">Web Development Fundamentals | A.Y. 2025–2026</div>
+
+    <div class="row g-4">
+      <div class="col-md-4 col-6">
+        <div class="member-card">
+          <div class="member-avatar"><i class="fas fa-user"></i></div>
+          <h6>Member 1</h6>
+          <span>index.html + CSS</span>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card h-100 p-3">
-          <i class="fas fa-user-circle fa-3x mb-3" style="color:#306998;"></i>
-          <h6 class="fw-bold">Member 2</h6>
-          <p class="text-muted small">Navbar + Footer</p>
+      <div class="col-md-4 col-6">
+        <div class="member-card">
+          <div class="member-avatar"><i class="fas fa-user"></i></div>
+          <h6>Member 2</h6>
+          <span>history.html</span>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card h-100 p-3">
-          <i class="fas fa-user-circle fa-3x mb-3" style="color:#306998;"></i>
-          <h6 class="fw-bold">Member 3</h6>
-          <p class="text-muted small">Card Grid</p>
+      <div class="col-md-4 col-6">
+        <div class="member-card">
+          <div class="member-avatar"><i class="fas fa-user"></i></div>
+          <h6>Member 3</h6>
+          <span>fundamentals.html</span>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card h-100 p-3">
-          <i class="fas fa-user-circle fa-3x mb-3" style="color:#306998;"></i>
-          <h6 class="fw-bold">Member 4</h6>
-          <p class="text-muted small">Modal + Form Validation</p>
+      <div class="col-md-4 col-6">
+        <div class="member-card">
+          <div class="member-avatar"><i class="fas fa-user"></i></div>
+          <h6>Member 4</h6>
+          <span>about.html</span>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card h-100 p-3">
-          <i class="fas fa-user-circle fa-3x mb-3" style="color:#306998;"></i>
-          <h6 class="fw-bold">Member 5</h6>
-          <p class="text-muted small">PHP Backend + Git + Deployment</p>
+      <div class="col-md-4 col-6">
+        <div class="member-card">
+          <div class="member-avatar"><i class="fas fa-user"></i></div>
+          <h6>Member 5</h6>
+          <span>PHP + Git + Deploy</span>
         </div>
       </div>
     </div>
@@ -88,9 +93,36 @@
 
 <footer class="site-footer">
   <div class="container">
-    <p class="mb-1"><i class="fab fa-python me-2"></i><strong>PyIntro</strong> — Your Gateway to Python</p>
-    <p class="mb-1">Web Development Fundamentals | A.Y. 2025–2026</p>
-    <a href="#">GitHub Pages Link</a>
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="footer-brand"><i class="fab fa-python me-2"></i>Py<span>Start</span></div>
+        <p class="footer-tagline">Learn Python the easy way.<br>Explore. Understand. Master.</p>
+      </div>
+      <div class="col-lg-2 col-6">
+        <div class="footer-heading">Quick Links</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="fundamentals.html">Fundamentals</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <div class="footer-heading">Topics</div>
+        <ul class="footer-links">
+          <li><a href="fundamentals.html">Python Basics</a></li>
+          <li><a href="fundamentals.html">Data Types</a></li>
+          <li><a href="fundamentals.html">Control Flow</a></li>
+          <li><a href="fundamentals.html">Functions</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <div class="footer-heading">Course Info</div>
+        <p style="color:rgba(255,255,255,0.45); font-size:0.88rem; line-height:1.7;">Web Development Fundamentals<br>A.Y. 2025–2026<br>National Teachers College</p>
+      </div>
+    </div>
+    <hr class="footer-divider"/>
+    <p class="footer-copy">© 2026 PyStart. Built for Web Development Fundamentals | National Teachers College</p>
   </div>
 </footer>
 

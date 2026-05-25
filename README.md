@@ -1,4 +1,4 @@
-# PyIntro — Your Gateway to Python
+# PyStart — Your Gateway to Python
 
 A multi-page Bootstrap 5 website introducing Python Programming — its history, purpose, real-world uses, and basic fundamentals.
 
