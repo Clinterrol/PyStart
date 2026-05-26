@@ -55,7 +55,7 @@ body { font-family: 'Outfit', sans-serif; background: #f4f6fa; color: #1a1a2e; m
 .section-sub { color: #666; font-size: 1rem; margin-bottom: 50px; }
 .py-card { background: #fff; border: 1px solid #e8ecf4; border-radius: 14px; padding: 32px 28px; height: 100%; transition: all 0.25s; position: relative; overflow: hidden; }
 .py-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--py-blue), var(--py-light-blue)); opacity: 0; transition: opacity 0.25s; }
-.py-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(30,58,95,0.12); border-color: transparent; }
+.py-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(255, 212, 59, 0.15); border-color: transparent; }
 .py-card:hover::before { opacity: 1; }
 .card-icon-wrap { width: 52px; height: 52px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 1.3rem; }
 .icon-blue { background: rgba(30,58,95,0.08); color: var(--py-blue); }
